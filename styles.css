@@ -1,11 +1,35 @@
-body {
+/* General Reset for body */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Full height layout */
+  html, body {
+    height: 100%;
+  }
+  
+  body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f9;
     color: #333;
+    display: flex;
+    flex-direction: column;
   }
   
+  /* Wrapper for main content */
+  .page-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+  }
+  
+  /* Header Styling */
   header {
     background-color: #4CAF50;
     color: white;
@@ -17,6 +41,7 @@ body {
     margin: 0;
   }
   
+  /* Navigation Styling */
   nav {
     background-color: #333;
     text-align: center;
@@ -44,6 +69,7 @@ body {
     text-decoration: underline;
   }
   
+  /* Section Styling */
   section {
     padding: 20px;
     max-width: 1000px;
@@ -54,11 +80,15 @@ body {
     color: #4CAF50;
   }
   
+  /* Footer Styling */
   footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
   }
   
   footer a {
@@ -70,6 +100,7 @@ body {
     text-decoration: underline;
   }
   
+  /* Gallery Section Styling */
   .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -98,9 +129,9 @@ body {
   ul li {
     margin: 10px 0;
   }
-
-  /* General styling for writings page */
-#writings {
+  
+  /* Styling for Writings Page */
+  #writings {
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
