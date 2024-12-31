@@ -98,3 +98,48 @@ body {
   ul li {
     margin: 10px 0;
   }
+
+  /* General styling for writings page */
+#writings {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  .writing-box {
+    background-color: #fff;
+    width: 300px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .writing-box:hover {
+    transform: scale(1.05);
+  }
+  
+  .writing-box img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .writing-title {
+    padding: 15px;
+    background-color: #f5f5f5;
+  }
+  
+  .writing-title h3 {
+    font-size: 1.2rem;
+    color: #4CAF50;
+    margin: 0;
+    text-align: center;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
